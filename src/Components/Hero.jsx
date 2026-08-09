@@ -7,7 +7,7 @@ function Hero() {
       id="home"
       className="relative min-h-screen overflow-hidden bg-gradient-to-br from-black via-zinc-950 to-black"
     >
-      {/* Red Glow */}
+     
       <div
         className="
           absolute
@@ -26,13 +26,12 @@ function Hero() {
         "
       />
 
-      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent" />
 
-      {/* Vignette */}
+    
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_45%,rgba(0,0,0,0.75)_100%)]"></div>
 
-      {/* Main Container */}
+     
       <div
         className="
           relative
@@ -49,10 +48,10 @@ function Hero() {
           2xl:px-36
         "
       >
-        {/* Left Side */}
+     
         <div className="w-full lg:w-[55%] xl:w-[52%] pt-28 lg:pt-0">
 
-          {/* Logo */}
+     
           <img
             src={Logo}
             alt="Spider-Man Brand New Day"
@@ -69,19 +68,18 @@ function Hero() {
             "
           />
 
-          {/* Release */}
+          
           <p className="uppercase tracking-[5px] text-zinc-400 text-xs sm:text-sm mb-6">
             ONLY IN THEATRES • JULY 31, 2026
           </p>
 
-          {/* Description */}
           <p className="text-zinc-300 text-base sm:text-lg leading-8 max-w-2xl mb-8">
             With the world forgetting Peter Parker, a mysterious new threat
             forces Spider-Man to embrace his destiny once again while protecting
             New York from an unseen darkness.
           </p>
 
-          {/* Rating */}
+      
           <div className="flex items-center gap-3 mb-10">
             <span className="text-yellow-400 text-xl">
               ★★★★★
@@ -92,7 +90,7 @@ function Hero() {
             </span>
           </div>
 
-          {/* Buttons */}
+       
           <div className="flex flex-col sm:flex-row gap-5">
 
             <a
@@ -144,7 +142,7 @@ function Hero() {
 
         </div>
 
-        {/* Right Side */}
+       
 
         <div
           className="

@@ -1,28 +1,62 @@
 function Trailer() {
+  const scrollToTrailer = () => {
+    document.getElementById("trailer-video")?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  };
+
   return (
     <section
       id="trailer"
       className="relative bg-black py-28 overflow-hidden scroll-mt-32"
     >
-      {/* Background Glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(220,38,38,0.08),transparent_65%)]"></div>
 
-      {/* Extra Red Glow */}
+      
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(220,38,38,0.08),transparent_60%)]"></div>
+
+     
       <div className="absolute top-1/2 left-1/2 w-[700px] h-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-red-600/5 blur-[180px]"></div>
 
-      {/* Content */}
+     
       <div className="relative z-10 max-w-7xl mx-auto px-6">
 
-        {/* Small Badge */}
-
+       
         <div className="flex justify-center">
-          <span className="px-4 py-2 rounded-full bg-red-600 text-white font-semibold tracking-widest text-sm">
+
+          <button
+            onClick={scrollToTrailer}
+            className="
+              group
+              flex
+              items-center
+              gap-3
+              px-5
+              py-2.5
+              rounded-full
+              bg-red-600
+              text-white
+              font-semibold
+              tracking-widest
+              text-sm
+              transition-all
+              duration-300
+              hover:bg-red-700
+              hover:scale-105
+              hover:shadow-lg
+              hover:shadow-red-600/30
+            "
+          >
+            <span className="text-base transition-transform duration-300 group-hover:scale-110">
+              ▶
+            </span>
+
             PLAY NOW
-          </span>
+          </button>
+
         </div>
 
-        {/* Heading */}
-
+    
         <div className="text-center mt-8">
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white">
@@ -38,9 +72,11 @@ function Trailer() {
 
         </div>
 
-        {/* Trailer */}
-
-        <div className="mt-16">
+  
+        <div
+          id="trailer-video"
+          className="mt-16 scroll-mt-32"
+        >
 
           <div
             className="
@@ -72,8 +108,7 @@ function Trailer() {
 
         </div>
 
-        {/* Bottom Info */}
-
+        
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 text-center">
 
           <div>

@@ -18,7 +18,7 @@ function CastCard({ image, character, actor, role }) {
         hover:shadow-red-600/25
       "
     >
-      {/* Image */}
+
       <div className="relative overflow-hidden">
 
         <img
@@ -34,10 +34,10 @@ function CastCard({ image, character, actor, role }) {
           "
         />
 
-        {/* Dark Gradient */}
+      
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
 
-        {/* Hover Overlay */}
+       
         <div
           className="
             absolute
@@ -52,7 +52,7 @@ function CastCard({ image, character, actor, role }) {
           "
         ></div>
 
-        {/* Role Badge */}
+        
         <div
           className="
             absolute
@@ -73,7 +73,6 @@ function CastCard({ image, character, actor, role }) {
           {role}
         </div>
 
-        {/* Character Info */}
         <div
           className="
             absolute
@@ -108,7 +107,7 @@ function CastCard({ image, character, actor, role }) {
             {actor}
           </p>
 
-          {/* Bottom Line */}
+   
           <div
             className="
               mt-4

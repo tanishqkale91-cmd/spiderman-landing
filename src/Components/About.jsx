@@ -136,8 +136,13 @@ function About() {
 
             <div className="mt-12">
 
-               <a
-  href="#trailer"
+              <button
+  onClick={() => {
+    document.getElementById("trailer")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }}
   className="
     inline-flex
     items-center
@@ -148,14 +153,15 @@ function About() {
     border
     border-zinc-500
     text-white
-    hover:bg-white
-    hover:text-black
     transition-all
     duration-300
+    hover:bg-white
+    hover:text-black
+    hover:border-white
   "
 >
   WATCH TRAILER
-</a>
+</button>
 
             </div>
 
